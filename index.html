@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+</head>
+ <body id="page" onmousemove="followCursor(event)">
+	
+	<div class="Q1">
+    	<p>Click button to displays list of items</p>
+    	<button onclick="loadDoc()">Load JSON</button>
+    	<ul id="listParent">
+        
+    	</ul>
+    </div>
+	<div class="Q2">
+		<p>Type the name of one of the US countries</p>
+    	<input type="text" onkeyup="filter(this)" />
+    	<ul id="countries">
+      
+    	</ul>
+	</div>
+	<div class="Q3">
+    	<p>Enter matrices in format: <br>[[11,12,13], [21,22,23], [31,32,33]]</p>
+    	<input type="text" id="arrayA" oninput="CheckThis(this)" />
+    	<input type="text" id="arrayB" oninput="CheckThat(this)" />
+    	<button onclick="displayMutiply()">Multiply</button>
+    	<textarea id="errorHolder"  readonly></textarea>
+    </div>
+	<div class="Q4" id="scrollSection" onscroll="scrollMe()">
+    	<p>Click court to start rotating. <br>Scroll section to fade.</p>
+    	<img id="courtRotate" onclick="rotateByX()" src="Court.png">
+    </div>
+
+    <img id="followPointer" src="ball.ico">
+
+	<script src="main.js" type="text/javascript"></script>
+</body>
+</html>

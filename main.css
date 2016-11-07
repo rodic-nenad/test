@@ -1,0 +1,163 @@
+body{
+	box-sizing: border-box;
+	position: relative;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+div{
+	width: 50%;
+	height: 50vh;
+	float: left;
+	position: relative;
+	font-family: 'Bree Serif', serif;
+}
+.Q1{
+	background-color: black;
+	overflow-y: scroll;
+	background-image:url('1.png');
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-size: 60px 60px;
+}
+.Q1 p{
+	text-align: center;
+	color: white;
+}
+.Q1 button{
+	display: block;
+	margin: 10px auto;
+	font-size: 16px;
+	padding: 12px 28px;
+	border-radius: 8px;
+	border: 2px solid gold;
+	font-family: 'Bree Serif', serif;
+}
+.Q1 button:hover {
+    background-color: gold;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(255,255,255,0.24),0 17px 50px 0 rgba(255,255,255,0.19);
+}
+#listParent{
+
+}
+.Q2{
+	background-color: gold;
+	background-image:url('2.png');
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-size: 60px 60px;
+}
+.Q2 p{
+	color: black;
+	text-align: center;
+}
+.Q2 input{
+	display: block;
+	margin: 10px auto;
+	font-size: 16px;
+	border-radius: 8px;
+	padding: 6px;
+	border: 2px solid black;
+}
+.Q2 li p{
+	display: inline;
+}
+#countries{
+	height: 80%;
+	overflow: hidden;
+	list-style-type: none;
+}
+.Q3{
+	background-color: gold;
+	background-image:url('3.png');
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-size: 60px 60px;
+}
+.Q3 p{
+	color: black;
+	text-align: center;
+}
+#errorHolder{
+	font-size: 18px;
+	display: block;
+	margin: 10px auto;
+	border-radius: 8px;
+	border: 2px solid black;
+	padding: 6px;
+}
+.Q3 input{
+	display: block;
+	margin: 10px auto;
+	font-size: 16px;
+	border-radius: 8px;
+	border: 2px solid black;
+	padding: 6px;
+}
+.Q3 button{
+	display: block;
+	margin: 10px auto;
+	font-size: 14px;
+	padding: 10px 24px;
+	border-radius: 8px;
+	border: 2px solid black;
+	font-family: 'Bree Serif', serif;
+}
+.Q3 button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.Q4{
+	background-color: black;
+	position: relative;
+	overflow-y: scroll;
+	background-image:url('4.png');
+    background-repeat:no-repeat;
+    background-position:left top;
+    background-size: 60px 60px;
+}
+.Q4 p{
+	color: white;
+	text-align: center;
+}
+.Q4 img{
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	height: 120%;
+}
+
+.fadeIn{
+	animation: faddingInCourt 2s forwards;
+}
+@keyframes faddingInCourt{
+    from{
+    	opacity: 1;
+    }
+    to{
+    	opacity: 0;
+    }
+}
+.fadeOut{
+	animation: faddingOutCourt 2s forwards;
+}
+@keyframes faddingOutCourt{
+    from{
+    	opacity: 0;
+    }
+    to{
+    	opacity: 1;
+    }
+}
+
+#followPointer{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70px;
+	height: 70px;
+}
